@@ -1,0 +1,179 @@
+load_seconds=1.6134
+train_shape=(750000, 10)
+test_shape=(250000, 9)
+sample_submission_shape=(250000, 2)
+
+Dtypes (train):
+id                  int64
+Temparature         int64
+Humidity            int64
+Moisture            int64
+Soil Type          object
+Crop Type          object
+Nitrogen            int64
+Potassium           int64
+Phosphorous         int64
+Fertilizer Name    object
+
+Numeric summary (train):
+                count    mean     std   min   25%   50%   75%   max
+Temparature  750000.0  31.504   4.026  25.0  28.0  32.0  35.0  38.0
+Humidity     750000.0  61.039   6.648  50.0  55.0  61.0  67.0  72.0
+Moisture     750000.0  45.184  11.795  25.0  35.0  45.0  55.0  65.0
+Nitrogen     750000.0  23.094  11.216   4.0  13.0  23.0  33.0  42.0
+Potassium    750000.0   9.478   5.766   0.0   4.0   9.0  14.0  19.0
+Phosphorous  750000.0  21.073  12.347   0.0  10.0  21.0  32.0  42.0
+
+Unique value counts (numeric):
+Temparature    14
+Humidity       23
+Moisture       41
+Nitrogen       39
+Potassium      20
+Phosphorous    43
+
+Target classes (7):
+['10-26-26', '14-35-14', '17-17-17', '20-20', '28-28', 'DAP', 'Urea']
+Soil types (5):
+['Black', 'Clayey', 'Loamy', 'Red', 'Sandy']
+Crop types (11):
+['Barley', 'Cotton', 'Ground Nuts', 'Maize', 'Millets', 'Oil seeds', 'Paddy', 'Pulses', 'Sugarcane', 'Tobacco', 'Wheat']
+
+Missing values before dropna (train):
+id                 0
+Temparature        0
+Humidity           0
+Moisture           0
+Soil Type          0
+Crop Type          0
+Nitrogen           0
+Potassium          0
+Phosphorous        0
+Fertilizer Name    0
+
+Missing values before dropna (test):
+id             0
+Temparature    0
+Humidity       0
+Moisture       0
+Soil Type      0
+Crop Type      0
+Nitrogen       0
+Potassium      0
+Phosphorous    0
+
+dropna: train 750,000 -> 750,000; test 250,000 -> 250,000
+
+Duplicate rows (train): 0
+Duplicate ids (train): 0
+Duplicate ids (test): 0
+Train/test id overlap: 0
+
+Target counts:
+Fertilizer Name
+14-35-14    114436
+10-26-26    113887
+17-17-17    112453
+28-28       111158
+20-20       110889
+DAP          94860
+Urea         92317
+
+Target share:
+Fertilizer Name
+14-35-14    0.1526
+10-26-26    0.1518
+17-17-17    0.1499
+28-28       0.1482
+20-20       0.1479
+DAP         0.1265
+Urea        0.1231
+
+Categorical counts (train):
+
+Soil Type:
+Soil Type
+Sandy     156710
+Black     150956
+Clayey    148382
+Red       148102
+Loamy     145850
+
+Crop Type:
+Crop Type
+Paddy          85754
+Pulses         78180
+Cotton         69171
+Tobacco        68000
+Wheat          66628
+Millets        65291
+Barley         65045
+Sugarcane      64269
+Oil seeds      64184
+Maize          62569
+Ground Nuts    60909
+
+Class-conditional numeric means:
+                 Temparature  Humidity  Moisture  Nitrogen  Potassium  Phosphorous
+Fertilizer Name                                                                   
+10-26-26              31.471    60.937    45.076    23.203      9.555       20.981
+14-35-14              31.543    60.963    45.100    23.083      9.485       21.410
+17-17-17              31.464    60.999    44.740    23.205      9.524       21.054
+20-20                 31.514    61.104    45.317    23.008      9.590       21.111
+28-28                 31.519    61.013    45.500    23.013      9.478       21.025
+DAP                   31.508    61.156    45.262    23.156      9.253       20.956
+Urea                  31.507    61.141    45.343    22.972      9.417       20.927
+
+Class-mean range (max - min):
+Temparature    0.079
+Humidity       0.219
+Moisture       0.760
+Nitrogen       0.233
+Potassium      0.337
+Phosphorous    0.483
+
+One-way ANOVA F-test (feature vs target):
+                   F    p
+feature                  
+Temparature   5.3941  0.0
+Humidity     18.1893  0.0
+Moisture     48.2393  0.0
+Nitrogen      7.9724  0.0
+Potassium    37.4430  0.0
+Phosphorous  19.3650  0.0
+Interpretation: p-values are tiny only because n is large. The class-mean range is the meaningful effect size, and it is small.
+
+Train vs test numeric comparison:
+             train_mean  test_mean  train_std  test_std  mean_delta
+Temparature      31.504     31.492      4.026     4.024      -0.012
+Humidity         61.039     61.045      6.648     6.636       0.006
+Moisture         45.184     45.190     11.795    11.793       0.006
+Nitrogen         23.094     23.140     11.216    11.216       0.046
+Potassium         9.478      9.488      5.766     5.767       0.009
+Phosphorous      21.073     21.122     12.347    12.381       0.049
+
+Train vs test categorical shares:
+
+Soil Type:
+            train    test
+Soil Type                
+Sandy      0.2089  0.2093
+Black      0.2013  0.2006
+Clayey     0.1978  0.1992
+Red        0.1975  0.1974
+Loamy      0.1945  0.1935
+
+Crop Type:
+              train    test
+Crop Type                  
+Paddy        0.1143  0.1133
+Pulses       0.1042  0.1049
+Cotton       0.0922  0.0924
+Tobacco      0.0907  0.0909
+Wheat        0.0888  0.0884
+Millets      0.0871  0.0876
+Barley       0.0867  0.0869
+Sugarcane    0.0857  0.0863
+Oil seeds    0.0856  0.0861
+Maize        0.0834  0.0836
+Ground Nuts  0.0812  0.0797

@@ -1,0 +1,32 @@
+{
+  "baselines": {
+    "random_top3": {
+      "val_map3": 0.26051
+    },
+    "majority_top3": {
+      "val_map3": 0.27848333333333336,
+      "classes": [
+        "14-35-14",
+        "10-26-26",
+        "17-17-17"
+      ]
+    },
+    "logistic_regression": {
+      "val_map3": 0.28721888888888886,
+      "val_logloss": 1.9393358740281423,
+      "train_seconds": 4.182848788000001
+    }
+  },
+  "xgboost_depth6_seed42": {
+    "val_logloss": 1.9124975983269843,
+    "val_map3": 0.34022,
+    "best_iter": 998,
+    "run_id": "b0af45395dc44868852f995130112992"
+  },
+  "lightgbm_depth6_seed42": {
+    "val_logloss": 1.9145831512361648,
+    "val_map3": 0.33735111111111116,
+    "best_iter": 895,
+    "run_id": "d70800dd5a574810a30e8945b846b92a"
+  }
+}
