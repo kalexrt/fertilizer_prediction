@@ -1,0 +1,76 @@
+{
+  "fast_dev": false,
+  "anchor": {
+    "run_name": "xgb_depth6_seed42",
+    "run_id": "82fc28c5ccb947f5bb3b4f4ddae73fc6",
+    "depth": 6,
+    "seed": 42,
+    "best_iter": 998,
+    "val_logloss": 1.9124975983269843,
+    "val_map3": 0.34022,
+    "train_seconds": 41.439364670999964,
+    "device": "cuda"
+  },
+  "ranking": {
+    "top1_accuracy": 0.20341333333333333,
+    "second_rank_share": 0.17117333333333334,
+    "third_rank_share": 0.15366,
+    "top3_coverage": 0.5282466666666666,
+    "map3": 0.34022
+  },
+  "top_confusions": [
+    {
+      "true": "10-26-26",
+      "predicted_top1": "14-35-14",
+      "count": 4242,
+      "share_of_true_class": 0.18624050577336787
+    },
+    {
+      "true": "17-17-17",
+      "predicted_top1": "14-35-14",
+      "count": 4094,
+      "share_of_true_class": 0.18202836690231647
+    },
+    {
+      "true": "28-28",
+      "predicted_top1": "14-35-14",
+      "count": 3909,
+      "share_of_true_class": 0.1758276358402303
+    },
+    {
+      "true": "20-20",
+      "predicted_top1": "14-35-14",
+      "count": 3875,
+      "share_of_true_class": 0.174722698169357
+    },
+    {
+      "true": "14-35-14",
+      "predicted_top1": "10-26-26",
+      "count": 3767,
+      "share_of_true_class": 0.16459125267619173
+    }
+  ],
+  "nutrient_run": {
+    "run_name": "xgb_depth6_seed42_nutrients",
+    "run_id": "3f350f8d94534b2cb739ec96bdc8daaf",
+    "depth": 6,
+    "seed": 42,
+    "best_iter": 726,
+    "val_logloss": 1.9174999389665457,
+    "val_map3": 0.3337755555555556,
+    "train_seconds": 35.074666468999965,
+    "device": "cuda"
+  },
+  "nutrient_map3_delta": -0.006444444444444419,
+  "top_pair_after_nutrients": {
+    "true": "10-26-26",
+    "predicted_top1": "14-35-14",
+    "true_class_rows": 22777,
+    "base_pair_count": 4242,
+    "nutrient_pair_count": 4280,
+    "base_true_class_map3": 0.38455459454713087,
+    "nutrient_true_class_map3": 0.38402042996590124
+  },
+  "nutrient_logloss_delta": 0.005002340639561398,
+  "anchor_train_logloss_at_best": 1.8068666950262586
+}

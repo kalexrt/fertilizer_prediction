@@ -1,4 +1,9 @@
 {
-  "xgb_depth6_seed42": "b0af45395dc44868852f995130112992",
-  "lgbm_depth6_seed42": "d70800dd5a574810a30e8945b846b92a"
+  "xgb_depth6_seed42": "82fc28c5ccb947f5bb3b4f4ddae73fc6",
+  "lgbm_depth6_seed42": "cb51023e6cdb4e158ee830fc7242f974",
+  "xgb_depth6_seed42_nutrients": "3f350f8d94534b2cb739ec96bdc8daaf",
+  "xgb_depth4_seed42": "c94d671bd9f943c38fefc36bbca9320a",
+  "xgb_depth8_seed42": "317f6a5b34714b95a492c4a63570e4cd",
+  "xgb_depth6_seed2025": "42a8972be3ff4ff58b8098fdf9c7d13c",
+  "xgb_depth6_seed7": "ae752316145849b38146cffcce508f5b"
 }
