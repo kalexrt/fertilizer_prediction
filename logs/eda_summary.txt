@@ -1,4 +1,4 @@
-load_seconds=1.2458
+load_seconds=0.8200
 train_shape=(750000, 10)
 test_shape=(250000, 9)
 sample_submission_shape=(250000, 2)

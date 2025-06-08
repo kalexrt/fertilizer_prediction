@@ -2,13 +2,13 @@
   "fast_dev": false,
   "anchor": {
     "run_name": "xgb_depth6_seed42",
-    "run_id": "82fc28c5ccb947f5bb3b4f4ddae73fc6",
+    "run_id": "8eea4df7426d45f882836285ca8cb611",
     "depth": 6,
     "seed": 42,
     "best_iter": 998,
     "val_logloss": 1.9124975983269843,
     "val_map3": 0.34022,
-    "train_seconds": 41.439364670999964,
+    "train_seconds": 43.49420856200004,
     "device": "cuda"
   },
   "ranking": {
@@ -52,13 +52,13 @@
   ],
   "nutrient_run": {
     "run_name": "xgb_depth6_seed42_nutrients",
-    "run_id": "3f350f8d94534b2cb739ec96bdc8daaf",
+    "run_id": "8cc0b7f33f7646ffa2e995570e8a699c",
     "depth": 6,
     "seed": 42,
     "best_iter": 726,
     "val_logloss": 1.9174999389665457,
     "val_map3": 0.3337755555555556,
-    "train_seconds": 35.074666468999965,
+    "train_seconds": 35.3628532470002,
     "device": "cuda"
   },
   "nutrient_map3_delta": -0.006444444444444419,

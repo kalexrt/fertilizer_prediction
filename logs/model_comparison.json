@@ -14,19 +14,19 @@
     "logistic_regression": {
       "val_map3": 0.28721888888888886,
       "val_logloss": 1.9393358740281423,
-      "train_seconds": 4.152684537999988
+      "train_seconds": 3.84370059999992
     }
   },
   "xgboost_depth6_seed42": {
     "val_logloss": 1.9124975983269843,
     "val_map3": 0.34022,
     "best_iter": 998,
-    "run_id": "82fc28c5ccb947f5bb3b4f4ddae73fc6"
+    "run_id": "8eea4df7426d45f882836285ca8cb611"
   },
   "lightgbm_depth6_seed42": {
     "val_logloss": 1.9145831512361648,
     "val_map3": 0.33735111111111116,
     "best_iter": 895,
-    "run_id": "cb51023e6cdb4e158ee830fc7242f974"
+    "run_id": "946a6b8f56ab4d50a608ec59320d8c2b"
   }
 }

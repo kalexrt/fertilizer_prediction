@@ -1,0 +1,27 @@
+{
+  "fast_dev": false,
+  "depth": 6,
+  "seed": 42,
+  "boosting_rounds": 1011,
+  "round_check_cap": 2000,
+  "round_check_reached_cap": false,
+  "round_check": {
+    "run_name": "xgb_depth6_seed42_round_cap2000",
+    "run_id": "13a9351e411a441681ca24f877c05aa2",
+    "depth": 6,
+    "seed": 42,
+    "best_iter": 1010,
+    "val_logloss": 1.912445963275145,
+    "val_map3": 0.3404077777777777,
+    "train_seconds": 44.398142733999975,
+    "device": "cuda"
+  },
+  "train_rows": 750000,
+  "submission_rows": 250000,
+  "training_device": "cuda",
+  "train_seconds": 48.07292435699992,
+  "model": "models/final_xgb.joblib",
+  "model_sha256": "d7012fe6e45b09a50442a2c95ac37bb8957b2d95b35d6949047cf4857898c675",
+  "submission": "submission.csv",
+  "submission_sha256": "dbafd72c60a7adaaa8b7d824c622838244c1676c3f1b97af5977496f75f3a51b"
+}
