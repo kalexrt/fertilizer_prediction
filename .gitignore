@@ -1,0 +1,26 @@
+# Competition data is not redistributed
+data/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local-only answers log
+docs/answers_log.md
+
+# Local MLflow tracking store
+mlruns/
+mlflow.db
+mlflow.db-*
+
+results.zip
+mlflow_results.zip
+submission.csv
+
+.env
+.DS_Store
+.vscode/
+.idea/
