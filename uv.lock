@@ -6,9 +6,6 @@ resolution-markers = [
     "sys_platform == 'win32'",
 ]
 
-[options]
-exclude-newer = "2025-06-01T18:15:00Z"
-
 [[package]]
 name = "alembic"
 version = "1.16.1"
