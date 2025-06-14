@@ -20,6 +20,18 @@ uv run --group api uvicorn src.api:app
 
 The container uses scikit-learn 1.6.1, matching the saved Kaggle pipeline. The local environment pins 1.5.2 and emits a version warning when loading the model.
 
+## Test the API
+
+From the project root, run the integration tests with Python 3.13 and uv. FastAPI’s test client loads the bundled model in-process. The sample inputs and expected rankings are included in the test file.
+
+```bash
+uv run --group api --group dev python -m pytest -q tests/test_api.py
+```
+
+- **Ranking.** For row `750000`, the test requires HTTP 200 and exactly `["10-26-26", "DAP", "28-28"]`, in submission order.
+- **Validation.** The tests omit each required field in turn and exercise invalid types, null input, a blank category, an extra field, and positive and negative numeric overflow. Each case checks for HTTP 422 and the specific field and error type. Numeric fields must be finite. Physical limits such as a 100% maximum humidity are currently unenforced.
+- **Concurrent requests.** Two requests send rows `750000` and `750001` in parallel. Each response must match its own saved ranking, so swapping the responses fails the test. [API integration tests](tests/test_api.py)
+
 ## Results
 
 All comparisons use one stratified 80/20 split of the synthetic competition data. MAP@3 gives full credit for the correct fertilizer in first place, half in second, and a third in third. The same validation rows were used for model selection, so these are holdout scores.
