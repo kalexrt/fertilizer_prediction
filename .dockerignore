@@ -1,0 +1,8 @@
+**
+!Dockerfile
+!src/
+!src/api.py
+!logs/
+!logs/final_run.json
+!models/
+!models/final_xgb.joblib
